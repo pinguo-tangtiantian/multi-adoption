@@ -1,0 +1,371 @@
+/* default style reset */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    font-size: 16px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  ul li{
+    list-style: none;
+  }
+  
+  input{
+    background: none;
+    outline: none;
+    border: none;
+  }
+  /* default style reset end */
+  
+  
+  /* common class style */
+  .hide{
+    display: none;
+  }
+  
+  .root{
+    min-height: 100%;
+    background-color: #ececed;
+  }
+  
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .container .content{
+    padding: 65px 20px;
+  }
+  
+  .float-left{
+    float: left;
+  }
+  
+  .float-right{
+    float: right;
+  }
+  
+  .btn{
+    text-align: center;
+    line-height: 48px;
+    margin: 0 auto;
+    background-color: #f56e4e;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .btn-lg{
+    width: 100%;
+    height: 48px;
+  }
+  
+  .alert-view{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .alert-content{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .triangle{
+    display: inline-block;
+    vertical-align: middle;
+    border-color: #474f63;
+    width: 0px;
+    height: 0px;
+    border-width: 6px;
+    float: right;
+    margin-top: 9px;
+    border-style: solid;
+  }
+  
+  .tri-down{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+  
+  /* common class style end */
+  
+  
+  
+
+  
+  
+  /* 登录页面 SignPage */
+  .sign-box{
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .sign-box input[type="text"],
+  .sign-box input[type="password"]{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    text-indent: 1em;
+    color: #7d8b93;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+  }
+  
+  .sign-title{
+    font-size: 30px;
+    color: #474f63;
+    margin: 20px 0;
+  }
+  
+  .tips{
+    margin: 10px 0;
+    font-size: 14px;
+    color: #7d8b93;
+  }
+  
+  .tips .highlight{
+    color: #f56e4e;
+  }
+  
+  
+  /* 登录页面 SignPage end */
+  
+  
+  /* 上传页面 uploadPage */
+  
+  .upload-item{
+    min-height: 30px;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .select{
+    position: absolute;
+    top: 0;
+    left: 5em;
+  }
+  
+  /* .select>.options-box{
+    display: none;
+  } */
+  
+  .option.selected{
+    background-color: #7d8b93;
+    color: #fff;
+  }
+  
+  .upload-item>label{
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+  }
+  
+  .upload-item input[type="text"],
+  .upload-item .select
+  {
+    width: 60%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    line-height: 30px;
+  }
+  
+  .options-box{
+    position: absolute;
+    top: 30px;
+    right: -2px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    border: 2px solid #7d8b93;
+  }
+  
+  .option{
+    padding: 5px 5%;
+  }
+  
+  .upload-item .select-value{
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  .btn-div .upload-tips{
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .btn-div .btn-box{
+    position: relative;
+    height: 60px;
+  }
+  
+  .upload-img-btn,
+  .upload-photo
+  {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+  }
+  
+  .upload-img-btn{
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #666;
+  }
+  
+  .upload-photo{
+    opacity: 0;
+  }
+                                       
+  .photos-ul{
+    min-height: 80px;
+    font-size: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .photos-ul>li{
+    width: 60px;
+    padding: 5px;
+  }
+  
+  .photos-ul>li img{
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  
+  
+  /* top navigator */
+  .top-nav{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    background-color: #f56e4e;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    z-index: 100;
+  }
+  
+  
+  .top-nav .menu-icon{
+    width: 26px;
+    height: 20px;
+    background-image: url("http://tritty.top:2333/images/menu_icon.png");
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+  .top-nav .user-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("http://tritty.top:2333/images/user_icon.png");
+    background-size: 100% 100%;
+  }
+  
+  .top-nav .menu-box,
+  .top-nav .menu-mask{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .top-nav .menu-box,
+  .top-nav .menu-list{
+    position: fixed;
+  }
+  
+  .top-nav .menu-mask{
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+  
+  .top-nav .menu-list{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+  }
+  
+  .menu-list p>a{
+    display: block;
+    color: #474f63;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #eeeeef;
+  }
+  .menu-list p>a.active{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #f56e4e;
+  }
+  
+  .menu-list .user-info{
+    height: 25%;
+  }
+  
+  
+  .footer-list{
+    width: 80%;
+    font-size: 12px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    color: #474f63;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer-list a{
+    color: #474f63;
+  }
+  
